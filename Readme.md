@@ -22,10 +22,9 @@ public IActionResult Details(Person person)
 **En la vista indicamos donde van a salir los errores de validacion.**</br>
 En nuestro caso creamos un espacion en la parte superior para que salgan todos los errores de validacion. </br>
 Y también por cada elemento</br>
-
 <pre><code>
-<form asp-action="Details">
-<div asp-validation-summary="All"></div>           
+      <form asp-action="Details">
+      <div asp-validation-summary="All"></div>           
             <div class="form-field">
                 <label asp-for="FirstName"></label>
                 <span class="input-span">

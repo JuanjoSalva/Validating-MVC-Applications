@@ -25,17 +25,13 @@ Y también por cada elemento</br>
 
 <pre><code>
 <form asp-action="Details">
-</code></pre></br>
-            **<div asp-validation-summary="All"></div>**</br>
+<div asp-validation-summary="All"></div>
 <pre><code>            
             <div class="form-field">
                 <label asp-for="FirstName"></label>
                 <span class="input-span">
                     <input asp-for="FirstName" />
-</code></pre>   </br>                 
-                    **<span asp-validation-for="FirstName"></span>**</br>
- <pre><code>                   
-                </span>
+                <span asp-validation-for="FirstName"></span>
            </div>
             <div class="form-field">
                 <label asp-for="LastName"></label>

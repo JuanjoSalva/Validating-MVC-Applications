@@ -7,8 +7,8 @@ En este caso queremos validar que sean campos requeridos el first_name y el last
 
 [Required(ErrorMessage = "Please enter your first name.")]
 [Required(ErrorMessage = "Please enter your last name.")]
-</br></br></br>
-**En el controlador, que muestra la vista, habrá que cpontrolar que se muestre si los datos son correctos**</br></br>
+</br></br>
+**En el controlador, que muestra la vista, habrá que controlar que se muestre si los datos son correctos**</br>
 
 <pre><code>
 public IActionResult Details(Person person)
@@ -18,9 +18,9 @@ public IActionResult Details(Person person)
             return View("Index", person);
         }
 </code></pre>
-</br></br></br>
+</br></br>
 **En la vista indicamos donde van a salir los errores de validacion.**</br>
-En nuestro caso creamos un espacion en la parte superior para que salgan todos los errores de validacion. </br>
+En nuestro caso creamos un espacio en la parte superior para que salgan todos los errores de validacion. </br>
 Y también por cada elemento</br>
 <pre><code>
       <form asp-action="Details">

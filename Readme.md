@@ -25,8 +25,7 @@ Y también por cada elemento</br>
 
 <pre><code>
 <form asp-action="Details">
-<div asp-validation-summary="All"></div>
-<pre><code>            
+<div asp-validation-summary="All"></div>           
             <div class="form-field">
                 <label asp-for="FirstName"></label>
                 <span class="input-span">
